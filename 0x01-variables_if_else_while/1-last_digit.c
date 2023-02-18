@@ -17,8 +17,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int ld = n % 10;
-
+	int ld;
+	
+	ld = n % 10;
 	if (ld == 0)
 	{printf("Last digit of %i is %i and is 0\n", n, ld); }
 	else if (ld < 6)

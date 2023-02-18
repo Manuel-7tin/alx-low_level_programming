@@ -13,7 +13,6 @@ int main(void)
 	int number;
 
 	for (number = 0; number < 10; number++)
-	{putchar(48 + number); }
-	putchar('\n');
+	{printf("%i\n",  number); }
 	return (0);
 }

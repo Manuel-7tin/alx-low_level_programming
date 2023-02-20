@@ -23,7 +23,7 @@ int main(void)
 				putchar(48 + num1);
 				putchar(48 + num2);
 				putchar(48 + num3);
-				if (rounds != 1)
+				if (rounds != 2)
 				{
 					putchar(',');
 					putchar(' ');

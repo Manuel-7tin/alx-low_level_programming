@@ -21,8 +21,11 @@ int main(void)
 		{
 			putchar(48 + num1);
 			putchar(48 + num2);
-			putchar(',');
-			putchar(' ');
+			if (rounds != 1)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		num1++;
 		num2 = num1 + 1;

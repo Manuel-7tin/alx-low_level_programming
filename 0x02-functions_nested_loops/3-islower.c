@@ -11,7 +11,7 @@
 int _islower(int c)
 {
 	if (c < 91)
-	{_putchar(48 + 0); }
+	return (0);
 	else
-	{_putchar(48 + 1); }
+	return (1);
 }

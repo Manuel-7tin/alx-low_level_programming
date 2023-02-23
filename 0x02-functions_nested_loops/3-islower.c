@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * islower - Entry point
+ * _islower - Entry point
  *
  * Description: Decides if a letter is lower or upper case
  *
- * Returns: 1 (success) 0 
+ * Returns: 1 (success) 0
  */
 
 int _islower(int c)

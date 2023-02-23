@@ -21,7 +21,10 @@ void print_diagonal(int n)
 		_putchar(92);
 		_putchar('\n');
 		for (; spaces > 0; spaces--)
-			_putchar(' ');
+		{
+			if (n != 0)
+				_putchar(' ');
+		}
 		refill++;
 		spaces = refill;
 	}

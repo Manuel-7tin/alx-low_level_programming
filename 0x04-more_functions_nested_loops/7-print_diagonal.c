@@ -14,6 +14,8 @@ void print_diagonal(int n)
 
 	spaces = 1;
 	refill = 1;
+	if (n <=0)
+		_putchar('\n');
 	for (; n > 0; n--)
 	{
 		_putchar(92);

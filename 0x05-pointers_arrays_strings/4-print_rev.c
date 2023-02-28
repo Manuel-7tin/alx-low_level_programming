@@ -10,7 +10,8 @@
 
 void print_rev(char *s)
 {
-	int *c, n;
+	int n;
+	char *c;
 
 	c = s;
 	for (n = -1; *c++;)

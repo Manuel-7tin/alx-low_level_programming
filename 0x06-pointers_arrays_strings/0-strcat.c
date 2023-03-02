@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * _strcat - concat 2 string
- * @dest:char
- * @src:char
- * Return:char
+ * _strcat - Function concatenates two imputted strings
+ *
+ * @dest: First string input to be concatenated
+ * @src: Second string input to be concatenated
+ *
+ * Return: Char (Conctenated string)
  */
-char *_strcat(char *dest, char *src)
+
+char *_strcat(char *dest, char *src);
 {
-	char *s = dest;
+	int n, len1, len2 = 0;
 
-	while (*dest != '\0')
+	for (n = 0; dest[n] != '\0'; n++)
+		len1++;
+	for (n = 0; src[n] != '\0'; n++)
+		len2++;
+	for (n = 0; n < len2; n++)
 	{
-		dest++;
+		dest[len1 + 1] = src[n];
+	        len1++;
 	}
-
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-	return (s);
+	return (&dest);
 }

@@ -9,7 +9,7 @@
  * Return: Char (Conctenated string)
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int n, len1, len2 = 0;
 
@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src);
 	for (n = 0; n < len2; n++)
 	{
 		dest[len1 + 1] = src[n];
-	        len1++;
+		len1++;
 	}
 	return (&dest);
 }

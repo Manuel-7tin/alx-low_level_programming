@@ -11,9 +11,9 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, s, n, num, same;
+	unsigned int i, s, n, t, num, same;
 
-	s = n = num = same = 0;
+	s = n = num = same = t = 0;
 	for (; needle[s]; s++)
 		num++;
 
@@ -23,10 +23,11 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (needle[i] == haystack[n])
 				same++;
+			if (same == num && i <= num)
+				return (haystack + (n - num + 1));
 			n++;
 		}
-		if (same == num && i <= num)
-			return (haystack + (n - num));
+		n = t++;
 		if (haystack[n] == '\0')
 			return (NULL);
 		n++;

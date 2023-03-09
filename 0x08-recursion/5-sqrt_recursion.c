@@ -13,7 +13,7 @@ int check_for_square(int x, int y)
 {
 	int root = (x + y)/2;
 
-	if (root < 2)
+	if (root < 1)
 		return (-1);
 	else if (root * root == y)
 		return (root);

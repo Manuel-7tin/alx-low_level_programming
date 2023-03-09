@@ -11,7 +11,7 @@
 
 int check_for_square(int x, int y)
 {
-	int root = (x + y) / 2;
+	long unsigned int root = (x + y) / 2;
 
 	if (y == 1)
 		return (1);

@@ -16,8 +16,8 @@ int find_sum(char *y, int n)
 	{
 		n++;
 		find_sum(y, n);
-	}else
-		return (n);
+	}
+	return (n);
 }
 
 int find_palindrome(char *x, char *y, int i)

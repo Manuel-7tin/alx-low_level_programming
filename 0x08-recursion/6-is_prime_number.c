@@ -13,9 +13,9 @@
 int check_for_prime(int x, int y)
 {
 	if (x == 1)
-		return (0);
-	else if (y % x == 0)
 		return (1);
+	else if (y % x == 0)
+		return (0);
 	else
 		return (check_for_prime(x - 1, y));
 }

@@ -9,4 +9,5 @@ int _pow_recursion(int x, int y);
 int is_prime_number(int n);
 int check_for_square(int x, int y);
 int _sqrt_recursion(int n);
+int check_for_prime(int x, int y);
 #endif/*MAIN_H*/

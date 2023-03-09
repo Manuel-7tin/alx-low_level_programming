@@ -32,5 +32,8 @@ int check_for_prime(int x, int y)
 int is_prime_number(int n)
 {
 	int x = n / 2;
+
+	if (n <= 1)
+		return (0);
 	return (check_for_prime(x, n));
 }

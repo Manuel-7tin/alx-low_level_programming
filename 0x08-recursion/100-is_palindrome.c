@@ -10,13 +10,21 @@
  * Return: (1) if it's a palindrome (0) if it isn't
  */
 
+int find_sum(char *y, int n)
+{
+	if (*y++)
+	{
+		n++;
+		find_sum(y, n);
+	}else
+		return (n);
+}
+
 int find_palindrome(char *x, char *y, int i)
 {
 	int n = -1;
 
-	for ( ; *y++; )
-		n++;
-
+	n = find_sum(y, n);
 	if (!y[i])
 	{
 		if (x == y)

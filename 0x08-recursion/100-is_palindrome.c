@@ -41,7 +41,7 @@ int find_palindrome(char *x, char *y, int i)
 
 int is_palindrome(char *s)
 {
-	char *p;
+	char *p = "";
 
 	if (!*s)
 		return (1);

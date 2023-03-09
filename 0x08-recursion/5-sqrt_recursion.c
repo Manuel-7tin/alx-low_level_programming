@@ -20,7 +20,7 @@ int check_for_square(int x, int y)
 	else if (root * root == y)
 		return (root);
 	else
-		return (check_for_square(x - 1, y));
+		return (check_for_square(--x, y));
 }
 
 

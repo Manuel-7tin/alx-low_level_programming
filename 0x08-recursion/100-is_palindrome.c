@@ -1,57 +1,39 @@
 #include "main.h"
-
 /**
- * find_palindrome - finds palindrome
- *
- * @x: replica string
- * @y: suspected palindrome
- * @i: integer to assign char to replica
- *
- * Return: (1) if it's a palindrome (0) if it isn't
+ * _strlen_recursion - Prints the length of a string.
+ * @s: the string to be printed
+ * Return: the length of string
  */
-
-int find_sum(char *y, int n)
+int _strlen_recursion(char *s)
 {
-	if (*y++)
-	{
-		n++;
-		find_sum(y, n);
-	}
-	return (n);
+	if (s[0] != '\0')
+		return (1 + _strlen_recursion(s + 1));
+	return (0);
 }
-
-int find_palindrome(char *x, char *y, int i)
+/**
+ * pal_checker - check if s is palindrome.
+ * @s: string base address.
+ * @i: left index.
+ * @j: rigth index.
+ * Return: 1 if s is palindrome, 0 otherwise.
+ */
+int pal_checker(char *s, int i, int j)
 {
-	int n = -1;
-
-	n = find_sum(y, n);
-	if (!y[i])
-	{
-		if (x == y)
+	if (s[i] == s[j])
+		if (i > j / 2)
 			return (1);
 		else
-			return (0);
-	}else
-	{
-		x[i] = y[n];
-		return (find_palindrome(x, y, i++));
-	}
+			return (pal_checker(s, i + 1, j - 1));
+	else
+		return (0);
 }
-
-
 /**
- * is_palindrome - Checks for palindrtome strings
+ * is_palindrome - check if s is palindrome
+ * @s: base address for string.
  *
- * @s: String to be checked
- *
- * Return: (1) if tstring s is a palindrome and (0) if it's not
+ * Return: 1 if n is prime, 0 otherwise.
  */
-
 int is_palindrome(char *s)
 {
-	char *p = "";
-
-	if (!*s)
-		return (1);
-	return (find_palindrome(p, s, 0));
+	return (pal_checker(s, 0, _strlen_recursion(s) - 1));
 }

@@ -3,9 +3,10 @@
 /**
  * _isalpha - Entry point
  *
+ * @c: An int
  * Description: Decides if a letter is lower or upper case
  *
- * Returns: 1 (success) 0
+ * Return: 1 (success) 0
  */
 
 int _isalpha(int c)

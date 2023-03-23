@@ -24,7 +24,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	while (i < 6)
 	{
-		if (s == ops[i].op)
+		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
 		i++;
 	}

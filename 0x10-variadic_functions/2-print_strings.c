@@ -4,7 +4,7 @@
 #include <stdarg.h>
 
 /**
- * print_atrings - Prints all the strings passed into it
+ * print_strings - Prints all the strings passed into it
  *
  * @separator: A char that seperates the numbers
  * @n: The amount of numbers to be printed

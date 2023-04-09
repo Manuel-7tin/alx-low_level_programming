@@ -17,6 +17,8 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	for (i = 0; i < strsize; i++)
 	{
+		if (b[i] != '1' && b[i] != '0')
+			return (0);
 		digit = (unsigned int)(b[i] - 48);
 		if (digit > 1)
 			return (0);

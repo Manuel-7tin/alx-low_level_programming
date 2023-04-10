@@ -16,5 +16,5 @@ void print_binary(unsigned long int n)
 	j = n - (2 * i);
 	if (n > 0 && i != 0)
 		print_binary(i);
-	putchar(48 + j);
+	_putchar(48 + j);
 }

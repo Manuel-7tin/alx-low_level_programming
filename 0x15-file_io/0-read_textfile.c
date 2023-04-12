@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * read_textfile - reads a text file and outpots iin

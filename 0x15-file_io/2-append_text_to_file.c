@@ -4,7 +4,7 @@
  * append_text_to_file - apppeds text to a given file
  *
  * @filename: The file to be appended to
- * @text_content - Null terminated string to be appended
+ * @text_content: Null terminated string to be appended
  *
  * Return: (int) 1if succesful -1 if it dfails
  */
